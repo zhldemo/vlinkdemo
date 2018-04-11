@@ -1,0 +1,78 @@
+.listwraper {
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template: auto/1fr;
+  align-items: center;
+  justify-content: start;
+  .deeprow {
+
+  }
+  .lightrow {
+
+
+  }
+
+  .rowwraper {
+    height: 70px;
+    width: 100%;
+    //border: 1px #ccc solid;
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      :hover{
+        background-color: #eee;
+      }
+      width: 100%;
+      .linkct {
+        margin: 0 auto;
+        align-self: flex-end;
+        display: grid;
+        width: 95%;
+        min-height: 70px;
+        align-items: center;
+        grid-template: 20px 1fr / 55px 1fr;
+        border-bottom: 1px solid #eee;
+
+        .ogimg {
+          grid-area: 1/1/3/2;
+          text-align: center;
+
+          .imgwraper {
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size: cover;
+            background-image: url(http://zhlio.com/documents/error.jpg);
+
+
+          }
+        }
+        .linktitle {
+          margin: 25px 0 0 0;
+          font-family: 'Quicksand', sans-serif;
+          color: #5c5c5c;
+          font-size: 1.2rem;
+          @media screen and (max-width: 700px) {
+            font-size:1rem;
+          }
+
+        }
+        .linkdsp {
+          color: #666;
+          font-family: 'Nanum Gothic', sans-serif;
+
+          @media screen and (max-width: 700px) {
+            font-size:0.7rem;
+          }
+        }
+      }
+
+    }
+  }
+}
+.listwraper *{
+
+}
